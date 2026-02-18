@@ -91,8 +91,7 @@ graph TD
   - CodeBuild creates Docker image
   - Pushed to AWS ECR
   - Elastic Beanstalk handles deployment, scaling, load balancing
-- **Pros:** Fully managed, auto-scaling, built-in monitoring
-- **Cons:** Less control over infrastructure
+
 
 **Deployment Flow:**
 ```
@@ -108,10 +107,8 @@ GitHub Push → CodePipeline → CodeBuild → ECR → Beanstalk → Live
   - Pushed to AWS ECR (Elastic Container Registry)
   - Pull image from ECR on EC2 instances
   - Run container directly on EC2
-  - Optional: Application Load Balancer for multiple instances
-  - Optional: RDS for database
-- **Pros:** Simple setup, full control over deployment process
-- **Cons:** Manual scaling, no orchestration, requires EC2 management
+
+
 
 **Deployment Flow:**
 ```
@@ -128,8 +125,7 @@ GitHub Push → GitHub Actions → ECR → Pull on EC2 → Docker Run → Live
   - Azure Web App pulls and runs container
   - Azure App Service handles scaling
   - Azure SQL Database for data storage
-- **Pros:** Integrated Azure ecosystem, easy Azure service connections
-- **Cons:** Vendor lock-in to Azure
+
 
 **Deployment Flow:**
 ```
@@ -287,6 +283,15 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/student-performance
      --resource-group student-perf-rg \
      --sku B1 --is-linux
    ```
+
+## Docker command
+## Run from terminal:
+
+docker build -t testdockerridhwan.azurecr.io/testdockerridhwan:latest .
+
+docker login testdockerridhwan.azurecr.io
+
+docker push testdockerridhwan.azurecr.io/testdockerridhwan:latest
 
 3. **Create Web App:**
    ```bash
