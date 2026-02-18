@@ -301,16 +301,7 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/student-performance
    - Link Azure Container Registry
    - Enable CI/CD webhook
 
----
 
-## 🤝 Getting Help
-
-- Check CloudWatch/Application Insights logs
-- Review Dockerfile for runtime issues
-- Test locally in Docker before deploying
-- Verify environment variables are set correctly
-
----
 
 ## 📚 Reference & Learning Resources
 
@@ -318,20 +309,4 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/student-performance
 - [AWS ECS User Guide](https://docs.aws.amazon.com/ecs/)
 - [Azure Web App Deployment](https://learn.microsoft.com/en-us/azure/app-service/)
 - MLOPS Udemy course from Krish Naik
-
----
-
-## 📝 Next Steps
-
-- [ ] Implement automated model retraining pipeline
-- [ ] Set up comprehensive monitoring & alerting
-- [ ] Add API documentation (Flask-RESTX)
-- [ ] Implement A/B testing for model versions
-- [ ] Set up disaster recovery & backups
-- [ ] Performance optimization & caching
-- [ ] Multi-region deployment
-
----
-
-**Author:** Ridhwan (ridhwanrazaliwork@gmail.com)  
 
