@@ -134,17 +134,6 @@ GitHub Push → Azure Pipelines → ACR → Azure Web App → Live
 
 ---
 
-## 📋 Deployment Comparison Table
-
-| Feature | Elastic Beanstalk | EC2 + ECR | Azure Web App |
-|---------|-------------------|-----------|---------------|
-| **Setup Time** | ⚡ 15 mins | ⏱️ 20 mins | ⏱️ 30 mins |
-| **Scaling** | ✅ Auto (Built-in) | 🟡 Manual or Scripts | ✅ Auto (App Service) |
-| **Cost** | 💰 Medium | 💰 Low | 💰 Medium |
-| **Infrastructure Control** | 🔴 Limited | 🟢 Full | 🟡 Medium |
-| **Learning Curve** | ✅ Easy | ✅ Easy | ✅ Easy |
-| **Monitoring** | ✅ CloudWatch | ✅ CloudWatch | ✅ Application Insights |
-| **Best Use Case** | Managed simplicity | Direct EC2 control | Azure-first shops |
 
 ## 🚀 Quick Start - Local Development
 
