@@ -282,6 +282,10 @@ docker login testdockerridhwan.azurecr.io
 
 docker push testdockerridhwan.azurecr.io/testdockerridhwan:latest
 
+---
+
+
+
 3. **Create Web App:**
    ```bash
    az webapp create \
@@ -293,9 +297,39 @@ docker push testdockerridhwan.azurecr.io/testdockerridhwan:latest
 
 4. **Configure Continuous Deployment:**
    - Link Azure Container Registry
-   - Enable CI/CD webhook
 
+## 🧹 Cleanup (Important: Avoid AWS & Azure Costs)
 
+⚠️ **To prevent unexpected charges, clean up these cloud resources after testing:**
+
+### AWS Resources
+1. **Delete Elastic Beanstalk Environment**
+   - AWS Console → Elastic Beanstalk → Select environment → Terminate
+
+2. **Delete EC2 Instance**
+   - AWS Console → EC2 → Instances → Select instance → Terminate instances
+
+3. **Remove ECR Repository**
+   - AWS Console → ECR → Select repository → Delete repository
+
+4. **Remove IAM Roles**
+   - AWS Console → IAM → Roles → Delete any roles created for this project
+
+5. **Delete Security Groups**
+   - AWS Console → EC2 → Security Groups → Delete (if not in-use)
+
+### Azure Resources
+1. **Delete Web App**
+   - Azure Portal → App Services → Select app → Delete
+
+2. **Delete App Service Plan**
+   - Azure Portal → App Service Plan → Select plan → Delete
+
+3. **Delete Container Registry**
+   - Azure Portal → Container Registries → Select registry → Delete
+
+4. **Delete Resource Group**
+   - Azure Portal → Resource Groups → Select group → Delete all
 
 ## 📚 Reference & Learning Resources
 
@@ -303,4 +337,3 @@ docker push testdockerridhwan.azurecr.io/testdockerridhwan:latest
 - [AWS ECS User Guide](https://docs.aws.amazon.com/ecs/)
 - [Azure Web App Deployment](https://learn.microsoft.com/en-us/azure/app-service/)
 - MLOPS Udemy course from Krish Naik
-
