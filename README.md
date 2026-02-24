@@ -232,6 +232,8 @@ docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/student-performance
    # Security group: Open port 5000, 22 for SSH
    ```
 
+**WARNING (Testing only):** When opening ports, do NOT use `0.0.0.0/0` for SSH or app ports in production. Restrict source IPs to `YOUR_IP/32`, use a bastion host for SSH, place applications behind a load balancer, and prefer private subnets/VPN for admin access.
+
 2. **Connect to EC2 & Install Docker:**
    ```bash
    ssh -i your-key.pem ec2-user@your-ec2-ip
